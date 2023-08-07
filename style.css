@@ -1,0 +1,154 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+.header {
+    padding:1em;
+    background-color: #F9F7EB;
+    box-shadow: 10px 5px 19px #7A718E;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.log {
+    border:1px solid black;
+    border-radius: 10px;
+    margin-right: 5%;
+    width:150px;
+}
+
+.log > * {
+    padding: 5% 20% 5% 10%;
+    font-weight: bolder;
+}
+
+
+.log span {
+    color: green;
+}
+
+
+img {
+    border-radius: 70%;
+    
+}
+
+.main {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    //background-color: #F8F1E8;
+}
+
+.add{
+  align-self: center;
+  transform: translate(-50%, -50%);
+  padding:0.5%;
+  margin-top: 2%;
+  border-radius: 10%;
+  background-color: #F9F7EB;
+  border: 4px double black;
+}
+
+.cards {
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    min-width:200px;
+    min-height:200px;
+    padding: 5%;
+    margin:5%;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: floralwhite; /* For browsers that do not support gradients */
+  //  background-image: linear-gradient(to right, #EAE22D, #F68B43);
+    background-image:url(book_page.jpg);
+    border-radius: 10%;
+    border: 3px solid black;
+}
+
+.card > * {
+    
+}
+
+.main button:not(.add){
+    width:50%;
+    align-self: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal{
+    position:absolute;
+    z-index: 1;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height:60%;
+    overflow:auto;
+    background-color:#F3DBB5;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:3px solid black;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.container > * {
+    margin:10%;
+}
+
+input{
+   border-radius:5px;
+   padding:5px; 
+}
+
+.modal button {
+    padding:15%;
+    border-radius: 2%;
+}
+
+.close {
+   font-size: 50px;
+    position: absolute;
+    left: 90%;
+    top:0%;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.cards button {
+    border-radius: 15px;
+}
+
+.remove {
+    background-color: #D0C7B5;
+}
+
+.cards p {
+    font-size:1.1em;
+}
