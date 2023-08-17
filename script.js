@@ -24,13 +24,15 @@ close.onclick = function () {
 let myLibrary = [];
 
 
-function Book(title, author, pages, status) {
-    //the constructor...
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
-    this.id=id;
+class Book  {
+    constructor (title, author, pages, status) {
+         this.title = title;
+         this.author = author;
+         this.pages = pages;
+         this.status = status;
+         this.id=id;
+    }
+    
 }
 
 
@@ -195,33 +197,3 @@ function removeTotal () {
         }
     
 }
-
-/*function removeRead () {
-    if(readBooks>0) {
-        readBooks--;
-        Read.innerHTML=readBooks;
-    }
-    
-}
-
-function removeNotRead () {
-    if(notReadBooked>0) {
-        notReadBooked--;
-        NotRead.innerHTML=notReadBooked;
-    }
-    
-}
-
-function addRead () {
-    readBooks++;
-    Read.innerHTML=readBooks;
-}
-
-function addNotRead() {
-    notReadBooked++;
-    NotRead.innerHTML=notReadBooked;
-} */
-
-
-
-
